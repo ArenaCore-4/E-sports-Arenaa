@@ -1,0 +1,88 @@
+# ArenaCore – Complete Sample Test Run
+
+## 1. Player Registration
+Register 14 players with unique IDs:
+
+- P01 to P07
+- P08 to P14
+
+Enter their names and verify that all players are registered successfully.
+
+## 2. Team Management
+Create two teams:
+
+- **T01 – Alpha:** P01, P02, P03, P04, P05, P06, P07
+- **T02 – Bravo:** P08, P09, P10, P11, P12, P13, P14
+
+Search for both teams and verify their player details.
+
+Test updating a player's information and searching for a player using their ID.
+
+## 3. Tournament Management
+Create a tournament with the following details:
+
+- Tournament ID: TR01
+- Tournament Name: Arena Championship
+- Game: Valorant
+- Entry Fee: 1000
+- Team Capacity: 8
+
+Register Alpha and Bravo for the tournament.
+
+Verify that both teams appear in the registered teams list.
+
+## 4. Match Scheduling
+Schedule a match between Alpha and Bravo.
+
+Verify that the match is assigned a unique match ID and appears in the scheduled matches list.
+
+## 5. Results and Leaderboard
+Enter the match result:
+
+- Alpha: 13
+- Bravo: 8
+
+Verify that Alpha is declared the winner and that the team statistics and leaderboard points are updated correctly.
+
+## 6. Reports and Statistics
+Open the Reports and Statistics module.
+
+Check the available reports, including:
+
+- Tournament standings
+- Match history
+- Team statistics
+- Player statistics
+
+Verify that the displayed information matches the registered records and match results.
+
+## 7. Save and Load Data
+Open the Save/Load Data module.
+
+1. Select Save Data.
+2. Verify that `ArenaCore.dat` is created.
+3. Exit the program.
+4. Run ArenaCore again.
+5. Select Load Data.
+6. Search for the previously registered players, teams, tournament, and match.
+
+Verify that all saved information is restored successfully.
+
+## 8. Error Handling
+Test the following invalid operations:
+
+- Registering a player with an existing ID.
+- Creating a team with an existing team ID.
+- Adding a player who is already assigned to another team.
+- Entering an invalid player or team ID.
+- Selecting an invalid tournament capacity.
+- Scheduling a match with an invalid team.
+- Entering an invalid match result.
+- Selecting an invalid menu option.
+
+Verify that the program displays appropriate error messages and does not accept invalid operations.
+
+## 9. Exit
+Return to the main menu and enter `0` to terminate the program.
+
+**Expected Outcome:** ArenaCore should successfully manage players, teams, tournaments, match scheduling, results, reports, and data storage while handling invalid operations appropriately.
